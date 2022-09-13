@@ -4,6 +4,8 @@ import 'package:iap/constants/style.dart';
 import 'package:iap/framework/controller/annual_plan_controller.dart';
 import 'package:iap/utils/app_colors.dart';
 
+import '../../../../menu/controllers.dart';
+
 // class AnnualPlanList extends StatelessWidget {
 //   const AnnualPlanList({
 //     Key? key,
@@ -76,7 +78,7 @@ class _AnnualPlanListState extends State<AnnualPlanList> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
 
-                        Text(annualPlanList.annualPLanLis[index].planID.toString()!,style: TextStyle(
+                        Text(annualPlanList.annualPLanLis[index].planID.toString(),style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.bold
                         ),),
@@ -89,7 +91,7 @@ class _AnnualPlanListState extends State<AnnualPlanList> {
 
                         Text(annualPlanList.annualPLanLis[index].auditGroup!.toString()),
                         Text(annualPlanList.annualPLanLis[index].overalRiskScore!.toString()),
-                          ElevatedButton.icon(onPressed: (){}, icon: const Icon(Icons.more), label: const Text(""))
+                          ElevatedButton.icon(onPressed:(){ gotoV();}, icon: const Icon(Icons.more), label: const Text("..."))
                       ],),
                     ],
                   ),
@@ -101,4 +103,10 @@ class _AnnualPlanListState extends State<AnnualPlanList> {
       );
     });
   }
+}
+
+void gotoV(){
+  Get.back();
+  navigationController.navigationTo("editPlan");
+  //_getPageRoute(EditAnnualPlan(auditPlan: ,));
 }

@@ -27,12 +27,11 @@ class RightSideMenu extends StatelessWidget {
               onTap: () {
                 if (itemName == AuthenticationPageRoute) {}
                 if (!menuController.isActive(itemName)) {
+
                   menuController.changeActiveItemTo(itemName);
-                  // if (ResponsiveWidget.isCustomSize(context)) {
                   Get.back();
                   navigationController.navigationTo(itemName);
 
-                  //  }
                 }
               }))
               .toList(),

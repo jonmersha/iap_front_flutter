@@ -1,13 +1,16 @@
 const dashBord="Dash Bord";
-const anualPlan="Audit plan";
+const annualPlan="Audit plan";
 const AuditProgramPageRoute="Audit Program";
 const EngagementPageRoute="Engagement";
 const AuthenticationPageRoute="Authentication";
+const editPlan="editPlan";
+
 
 List sideMenuItem=[
   dashBord,
-  anualPlan,
+  annualPlan,
   AuditProgramPageRoute,
   EngagementPageRoute,
   AuthenticationPageRoute
+
 ];

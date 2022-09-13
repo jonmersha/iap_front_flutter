@@ -22,7 +22,7 @@ class MenuController extends GetxController{
     switch(itemName){
       case dashBord:
         return _customIcon(Icons.trending_down, itemName);
-        case anualPlan:
+        case annualPlan:
         return _customIcon(Icons.trending_down, itemName);
         case AuditProgramPageRoute:
         return _customIcon(Icons.trending_down, itemName);

@@ -1,12 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iap/framework/model/annual_plan_model.dart';
 
-class EditAnnualPlan extends StatelessWidget {
+import '../../../menu/controllers.dart';
 
-  const EditAnnualPlan({Key? key}) : super(key: key);
+class EditAnnualPlan extends StatelessWidget {
+  final AuditPlan auditPlan;
+   EditAnnualPlan({Key? key, required this.auditPlan}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(child: Text("Edit Plan"),);
+    return Row(
+      children: [
+
+        Column(
+          children: [
+            Text(auditPlan.auditName!),
+            Text(auditPlan.engmonth!.toString()),
+
+
+          ],
+        ),
+        ElevatedButton.icon(onPressed: (){gotoV();}, icon: Icon(Icons.keyboard_backspace_outlined), label: const Text("Back")),
+      ],
+    );
   }
+}
+
+void gotoV(){
+  Get.back();
+  navigationController.navigationTo("Audit plan");
 }

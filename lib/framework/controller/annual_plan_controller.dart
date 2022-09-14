@@ -23,5 +23,17 @@ class AnnualPlanController extends GetxController{
       print(response.statusCode);
     }
   }
+
+
+  Future<void> addAnnualPlan(dynamic body ) async{
+    Response response=await annualPlanRepo.addAnnualPlan(body);
+    if(response.statusCode==200){
+      print(response.body);
+      update();
+    }
+    else{
+      print(response.statusCode);
+    }
+  }
 }
 

@@ -13,13 +13,12 @@ Route<dynamic> generateRoute(RouteSettings settings){
       return _getPageRoute(DashBoardScreen());//OverView()
     case annualPlan:
       return _getPageRoute(AnnualPLanDashBord());
-      case editPlan:
-      return _getPageRoute(EditAnnualPlan());
     default:
       return _getPageRoute(Auditor());
 
   }
 }
+
 
 PageRoute _getPageRoute(Widget child){
   return MaterialPageRoute(builder:(context)=>child);

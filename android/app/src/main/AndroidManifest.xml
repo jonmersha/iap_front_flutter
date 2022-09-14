@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.besheger.iap">
    <application
-        android:label="iap"
+        android:label="iA"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

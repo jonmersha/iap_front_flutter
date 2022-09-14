@@ -9,5 +9,8 @@ class AnnualPlanRepo extends GetxService{
   Future<Response> getAnnualPlanList() async{
     return await apIClient.getData(AppConstants.GET_PLAN);
   }
+  Future<Response> addAnnualPlan(dynamic body) async{
+    return await apIClient.postData(AppConstants.GET_PLAN,body);
+  }
 
 }

@@ -8,6 +8,11 @@ class NavigationController extends GetxController{
   Future<dynamic> navigationTo(String routeName){
     return navigationKey.currentState!.pushNamed(routeName);
   }
+
+
+  Future navigationWidget(Widget widgets){
+    return navigationKey.currentState!.push(MaterialPageRoute(builder: (context)=>widgets));
+  }
   goBack()=>navigationKey.currentState!.pop();
 
 }

@@ -2,14 +2,17 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iap/framework/page/plan/components/card_object.dart';
+import 'package:iap/framework/page/plan/upload_plan.dart';
 
 import '../../../constants/style.dart';
 import '../../../menu/controllers.dart';
 import '../../../resposnsive.dart';
 import '../../../utils/app_colors.dart';
 import '../../controller/annual_plan_controller.dart';
+import '../../helper/repo_helper.dart';
 import '../widget/charts/pie_chart.dart';
 import '../widget/custom_text.dart';
+import 'add_new_plan.dart';
 import 'components/annual_plan_list.dart';
 import 'components/plan_top_card.dart';
 import 'edit_plan.dart';
@@ -68,6 +71,7 @@ class AnnualPLanDashBord extends StatelessWidget {
     ];
     Get.find<AnnualPlanController>().getAnnualPlanList();
 
+
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -94,7 +98,7 @@ class AnnualPLanDashBord extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(right: 10.0),
                       child: ElevatedButton.icon(
-                          onPressed: () {},
+                          onPressed: () {navigateTo(UploadPlan());},
                           icon: const Icon(Icons.add),
                           label: const Text("Upload")),
                     )
@@ -181,4 +185,6 @@ class RightSideCard extends StatelessWidget {
     );
   }
 }
+
+
 

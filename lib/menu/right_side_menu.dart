@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -37,48 +36,8 @@ class RightSideMenu extends StatelessWidget {
               .toList(),
 
         )
-        // Column(
-        //   children: [
-        //     DrawerHeader(child: Image.asset('assets/images/logo.png'),
-        //     ),
-        //     DrawerListTile(
-        //       title: "Dashboard",
-        //       svgSrc: 'assets/icons/menu_dashbord.svg',
-        //       press: (){},),
-        //     DrawerListTile(
-        //       title: "FieldWork",
-        //       svgSrc: 'assets/icons/menu_dashbord.svg',
-        //       press: (){},),
-        //     DrawerListTile(
-        //       title: "Audit Program",
-        //       svgSrc: 'assets/icons/menu_dashbord.svg',
-        //       press: (){},),
-        //     DrawerListTile(
-        //       title: "Task Assignment",
-        //       svgSrc: 'assets/icons/menu_dashbord.svg',
-        //       press: (){},),
-        //     DrawerListTile(
-        //       title: "Report",
-        //       svgSrc: 'assets/icons/menu_dashbord.svg',
-        //       press: (){},),
-        //     DrawerListTile(
-        //       title: "Followup",
-        //       svgSrc: 'assets/icons/menu_dashbord.svg',
-        //       press: (){},),
-        //     DrawerListTile(
-        //       title: "Plan",
-        //       svgSrc: 'assets/icons/menu_dashbord.svg',
-        //       press: (){},),
-        //     DrawerListTile(
-        //       title: "profile",
-        //       svgSrc: 'assets/icons/menu_dashbord.svg',
-        //       press: (){},),
-        //     DrawerListTile(
-        //       title: "setting",
-        //       svgSrc: 'assets/icons/menu_dashbord.svg',
-        //       press: (){},),
-        //   ],
-        // ),
+
+
       ),
     );
   }

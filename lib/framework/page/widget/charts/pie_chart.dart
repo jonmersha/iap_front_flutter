@@ -1,6 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:iap/constants/style.dart';
+import '../../../../constants/constants.dart';
 
 class AnnualPlanChart extends StatelessWidget {
   const AnnualPlanChart({

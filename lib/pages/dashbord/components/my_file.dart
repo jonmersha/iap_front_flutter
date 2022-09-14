@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../utils/constants.dart';
+import '../../../constants/constants.dart';
 import '../../../resposnsive.dart';
 import 'file_information.dart';
 import 'list_object.dart';

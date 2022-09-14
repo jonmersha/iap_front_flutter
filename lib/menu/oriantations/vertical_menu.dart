@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iap/utils/app_colors.dart';
+import 'package:iap/constants/app_colors.dart';
 import '../controllers.dart';
 import '../../wigets/custom_text.dart';
 

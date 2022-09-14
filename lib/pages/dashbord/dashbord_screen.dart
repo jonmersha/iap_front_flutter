@@ -2,9 +2,9 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:iap/utils/app_colors.dart';
+import 'package:iap/constants/app_colors.dart';
 
-import '../../utils/constants.dart';
+import '../../constants/constants.dart';
 import '../../resposnsive.dart';
 import 'components/chart.dart';
 import 'components/data_source.dart';

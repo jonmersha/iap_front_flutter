@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iap/constants/style.dart';
-
+import '../../../../constants/constants.dart';
 import '../../../../resposnsive.dart';
 import 'card_object.dart';
 import 'file_information.dart';

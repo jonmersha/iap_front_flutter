@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:iap/utils/app_colors.dart';
+import 'package:iap/constants/app_colors.dart';
+import '../framework/security/authentication.dart';
 import 'controllers.dart';
 import '../routing/routes.dart';
 import 'side_menu_item.dart';
@@ -24,7 +25,9 @@ class RightSideMenu extends StatelessWidget {
                   ? "Log Out"
                   : itemName,
               onTap: () {
-                if (itemName == AuthenticationPageRoute) {}
+                if (itemName == AuthenticationPageRoute) {
+                  Get.offAll(()=>Authentication());
+                }
                 if (!menuController.isActive(itemName)) {
 
                   menuController.changeActiveItemTo(itemName);

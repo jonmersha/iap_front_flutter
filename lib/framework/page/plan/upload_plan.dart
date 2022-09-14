@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:iap/constants/style.dart';
 import 'package:iap/resposnsive.dart';
-import 'package:iap/utils/app_colors.dart';
+import 'package:iap/constants/app_colors.dart';
 
+import '../../../constants/constants.dart';
 import 'add_new_plan.dart';
 import 'components/annual_plan_list.dart';
 import 'components/uploader.dart';

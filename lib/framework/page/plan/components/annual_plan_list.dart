@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iap/constants/style.dart';
 import 'package:iap/framework/controller/annual_plan_controller.dart';
-import 'package:iap/utils/app_colors.dart';
+import 'package:iap/constants/app_colors.dart';
+import '../../../../constants/constants.dart';
 import '../../../helper/repo_helper.dart';
 import '../edit_plan.dart';
 class AnnualPlanList extends StatefulWidget {

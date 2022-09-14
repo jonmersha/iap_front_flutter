@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:iap/framework/data/api/api_client.dart';
-import 'package:iap/utils/app_constants.dart';
+import 'package:iap/constants/url.dart';
 
 class AnnualPlanRepo extends GetxService{
   final ApIClient  apIClient;

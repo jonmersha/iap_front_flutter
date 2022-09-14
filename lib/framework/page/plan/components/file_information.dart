@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:iap/constants/style.dart';
 import 'package:iap/framework/page/plan/components/card_object.dart';
 import 'package:iap/framework/page/plan/components/prograss_line.dart';
-import '../../../../utils/app_colors.dart';
+import '../../../../constants/app_colors.dart';
+import '../../../../constants/constants.dart';
 
 
 class CardContent extends StatelessWidget {

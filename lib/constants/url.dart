@@ -9,9 +9,14 @@ class AppConstants{
   static const String BASE_URL=remote;
 
   static const String GET_PLAN="/plan";
-  static const String GET_AUDITOR="/plan";
+  static const String GET_AUDITOR="/auditor";
   static const String GET_AUDTEES="/plan";
   static const String GET_REPORT="/plan";
+
+  static const String GET_USER="/user";
+
+
+
 
   
 

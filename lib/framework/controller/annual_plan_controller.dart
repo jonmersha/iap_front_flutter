@@ -10,7 +10,6 @@ class AnnualPlanController extends GetxController{
   List<dynamic> get annualPLanLis=>_annualPlanList;
   bool _isLoaded = false;
   bool get isLoaded=>_isLoaded;
-
   Future<void> getAnnualPlanList() async{
     Response response=await annualPlanRepo.getAnnualPlanList();
     if(response.statusCode==200){
@@ -23,8 +22,6 @@ class AnnualPlanController extends GetxController{
       print(response.statusCode);
     }
   }
-
-
   Future<void> addAnnualPlan(dynamic body ) async{
     Response response=await annualPlanRepo.addAnnualPlan(body);
     if(response.statusCode==200){

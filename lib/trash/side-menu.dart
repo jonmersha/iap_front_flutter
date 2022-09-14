@@ -5,7 +5,7 @@ import 'package:iap/helpers/responsiveness.dart';
 import 'package:iap/routing/routes.dart';
 import 'package:iap/wigets/custom_text.dart';
 import 'package:iap/menu/side_menu_item.dart';
-import '../utils/app_colors.dart';
+import '../constants/app_colors.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({Key? key}) : super(key: key);

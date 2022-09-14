@@ -4,18 +4,16 @@ import 'package:get/get.dart';
 import 'package:iap/framework/page/plan/components/card_object.dart';
 import 'package:iap/framework/page/plan/upload_plan.dart';
 
-import '../../../constants/style.dart';
-import '../../../menu/controllers.dart';
+import '../../../constants/constants.dart';
 import '../../../resposnsive.dart';
-import '../../../utils/app_colors.dart';
+import '../../../constants/app_colors.dart';
 import '../../controller/annual_plan_controller.dart';
 import '../../helper/repo_helper.dart';
 import '../widget/charts/pie_chart.dart';
 import '../widget/custom_text.dart';
-import 'add_new_plan.dart';
 import 'components/annual_plan_list.dart';
 import 'components/plan_top_card.dart';
-import 'edit_plan.dart';
+
 
 class AnnualPLanDashBord extends StatelessWidget {
   const AnnualPLanDashBord({Key? key}) : super(key: key);
@@ -76,7 +74,7 @@ class AnnualPLanDashBord extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Expanded(
-          flex: 5,
+          flex: 7,
           child: SingleChildScrollView(
             child: Column(
               children: [
@@ -115,7 +113,7 @@ class AnnualPLanDashBord extends StatelessWidget {
         ),
         if (!Responsive.isMobile(context))
           Expanded(
-              flex: 2,
+              flex: 3,
               child: RightSideCard(
                 paichartSelectioData: chartDat,
               ))

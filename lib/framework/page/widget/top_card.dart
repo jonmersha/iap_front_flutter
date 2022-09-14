@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iap/framework/page/widget/progres_bar.dart';
 import 'package:iap/wigets/custom_text.dart';
 
-import '../../../utils/app_colors.dart';
+import '../../../constants/app_colors.dart';
 import 'custom_text.dart';
 
 class TopCard extends StatelessWidget {

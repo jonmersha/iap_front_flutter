@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iap/constants/style.dart';
 import 'package:iap/framework/page/widget/custom_text.dart';
-import 'package:iap/utils/app_colors.dart';
-
+import '../../../constants/constants.dart';
 import '../../controller/annual_plan_controller.dart';
 import '../widget/custom_field.dart';
+
 class AddNewPlan extends StatefulWidget {
   const AddNewPlan({Key? key}) : super(key: key);
-
   @override
   State<AddNewPlan> createState() => _AddNewPlanState();
 }
 class _AddNewPlanState extends State<AddNewPlan> {
-  final   auditName=TextEditingController();
+  final  auditName=TextEditingController();
   final  auditTeam=TextEditingController();
   final  startDate=TextEditingController();
   final  endDate=TextEditingController();
@@ -24,10 +22,6 @@ class _AddNewPlanState extends State<AddNewPlan> {
   }
   @override
   Widget build(BuildContext context) {
-
-    //auditName.text="WAETSR";
-
-
     return Container(
       margin: EdgeInsets.all(appPadding),
       color: Colors.white,
@@ -44,7 +38,6 @@ class _AddNewPlanState extends State<AddNewPlan> {
             CustomText( text: auditTeam.text),
             ElevatedButton(onPressed: (){
               Map<String, String> jsonData={"name":""};
-
               Get.find<AnnualPlanController>().addAnnualPlan(jsonData);
               },
                 child: Text("Add")

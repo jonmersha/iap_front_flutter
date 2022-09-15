@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iap/framework/model/annual_plan_model.dart';
+import 'package:iap/framework/data/model/annual_plan_model.dart';
 
 import '../../../menu/controllers.dart';
 

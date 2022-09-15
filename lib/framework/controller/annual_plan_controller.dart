@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:iap/framework/data/repository/annual_plan_repository.dart';
-import 'package:iap/framework/model/annual_plan_model.dart';
+import 'package:iap/framework/data/model/annual_plan_model.dart';
 
 
 class AnnualPlanController extends GetxController{

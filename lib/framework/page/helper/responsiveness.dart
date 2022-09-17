@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-import '../constants/constants.dart';
+import '../../../constants/constants.dart';
 
 const int largeScreenSize=1366;
 const int mediumScreenSize=768;

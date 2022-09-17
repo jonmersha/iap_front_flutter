@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iap/constants/app_colors.dart';
-import '../controllers.dart';
-import '../../wigets/custom_text.dart';
+import 'package:iap/framework/page/helper/menu/controllers.dart';
+import 'package:iap/widgets/custom_text.dart';
+
 
 
 class VerticalMenuItem extends StatelessWidget {

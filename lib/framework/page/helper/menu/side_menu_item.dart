@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:iap/helpers/responsiveness.dart';
-import 'package:iap/menu/oriantations/horizontal_menu.dart';
-import 'package:iap/menu/oriantations/vertical_menu.dart';
+import 'package:iap/framework/page/helper/menu/oriantations/horizontal_menu.dart';
+import 'package:iap/framework/page/helper/menu/oriantations/vertical_menu.dart';
+import 'package:iap/framework/page/helper/responsiveness.dart';
+
+
 
 class SideMenuItem extends StatelessWidget {
   final String itemName;

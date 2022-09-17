@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iap/framework/controller/annual_plan_controller.dart';
 import 'package:iap/framework/data/repository/annual_plan_repository.dart';
-import 'package:iap/menu/controllers.dart';
 import 'package:iap/constants/url.dart';
-import '../controller/auth_controller.dart';
-import '../data/api/api_client.dart';
-import '../data/repository/auth_repository.dart';
+import 'package:iap/framework/page/helper/menu/controllers.dart';
+import '../../controller/auth_controller.dart';
+import '../api/api_client.dart';
+import 'auth_repository.dart';
+
 Future<void> init() async {
 
   Get.lazyPut(()=>ApIClient(appBaseUrl: AppConstants.BASE_URL));

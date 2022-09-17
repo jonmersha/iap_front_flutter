@@ -5,9 +5,10 @@ import 'package:iap/framework/controller/annual_plan_controller.dart';
 
 import 'package:iap/constants/app_colors.dart';
 import 'package:iap/framework/security/authentication.dart';
-import 'framework/helper/repo_helper.dart' as dep;
-import 'menu/controllers/menu_controller.dart';
-import 'menu/controllers/navigation_controller.dart';
+import 'framework/page/helper/menu/controllers/menu_controller.dart';
+import 'framework/page/helper/menu/controllers/navigation_controller.dart';
+import 'framework/data/repository/repo_helper.dart' as dep;
+
 
 Future<void> main() async{
 
@@ -37,7 +38,7 @@ class _AuditAppState extends State<AuditApp> {
           textTheme: GoogleFonts.mulishTextTheme(
           Theme.of(context).textTheme
         ).apply(
-          bodyColor: Colors.white
+          bodyColor: light
         ),
         pageTransitionsTheme: const PageTransitionsTheme(builders:{
           TargetPlatform.iOS:FadeUpwardsPageTransitionsBuilder(),

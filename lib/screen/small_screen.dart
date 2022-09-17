@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iap/helpers/local_navigator.dart';
+import 'package:iap/framework/page/helper/local_navigator.dart';
 
 class SmallScreen extends StatelessWidget {
   const SmallScreen({Key? key}) : super(key: key);

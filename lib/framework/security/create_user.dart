@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:iap/constants/constants.dart';
 
 import '../../layout.dart';
-import '../../wigets/custom_text.dart';
+import '../../widgets/custom_text.dart';
 import 'authentication.dart';
 
 class CreateUser extends StatefulWidget {

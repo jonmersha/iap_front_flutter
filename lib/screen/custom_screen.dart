@@ -1,7 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:iap/helpers/local_navigator.dart';
-import 'package:iap/trash/side-menu.dart';
+import 'package:iap/framework/page/helper/local_navigator.dart';
+import 'package:iap/framework/page/helper/menu/right_side_menu.dart';
+import 'package:iap/framework/page/helper/menu/side-menu.dart';
 class CustomScreen extends StatelessWidget {
   const CustomScreen ({Key? key}) : super(key: key);
 
@@ -18,7 +19,7 @@ class CustomScreen extends StatelessWidget {
                 children: const [
                   Expanded(
                       flex: 1,
-                      child: SideMenu())
+                      child: RightSideMenu())
                 ],
               ),
             )),

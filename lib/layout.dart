@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:iap/helpers/responsiveness.dart';
+import 'package:iap/framework/page/helper/menu/right_side_menu.dart';
+import 'package:iap/framework/page/helper/menu/right_side_menu.dart';
+import 'package:iap/framework/page/helper/menu/side-menu.dart';
+import 'package:iap/framework/page/helper/responsiveness.dart';
 import 'package:iap/screen/custom_screen.dart';
 import 'package:iap/screen/large_screen.dart';
-import 'package:iap/menu/right_side_menu.dart';
 import 'package:iap/screen/small_screen.dart';
-import 'package:iap/wigets/top_nav_bar.dart';
+import 'package:iap/widgets/top_nav_bar.dart';
 
 import 'constants/constants.dart';
 

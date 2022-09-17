@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'authentication.dart';
 import 'package:iap/layout.dart';
-import 'package:iap/wigets/custom_text.dart';
+import 'package:iap/widgets/custom_text.dart';
 
 import '../../constants/constants.dart';
 

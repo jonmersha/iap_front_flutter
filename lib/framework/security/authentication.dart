@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:iap/constants/app_colors.dart';
 import 'package:iap/framework/security/create_user.dart';
 import 'package:iap/layout.dart';
-import 'package:iap/wigets/custom_text.dart';
+import 'package:iap/widgets/custom_text.dart';
 
 import '../../constants/constants.dart';
 import 'forget_password.dart';

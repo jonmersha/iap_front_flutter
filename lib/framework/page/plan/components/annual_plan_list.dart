@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:iap/framework/controller/annual_plan_controller.dart';
 import 'package:iap/constants/app_colors.dart';
 import '../../../../constants/constants.dart';
-import '../../../helper/repo_helper.dart';
+import '../../../data/repository/repo_helper.dart';
 import '../edit_plan.dart';
 class AnnualPlanList extends StatefulWidget {
   const AnnualPlanList({Key? key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iap/framework/page/widget/progres_bar.dart';
-import 'package:iap/wigets/custom_text.dart';
+import 'package:iap/widgets/custom_text.dart';
 
 import '../../../constants/app_colors.dart';
 import 'custom_text.dart';
@@ -32,12 +32,11 @@ class TopCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //: double.infinity,
       height: cardHeight,
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       decoration: BoxDecoration(
           color: cardBack,
-          borderRadius: BorderRadius.all(Radius.circular(10))),
+          borderRadius: const BorderRadius.all(Radius.circular(10))),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -59,11 +58,11 @@ class TopCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.only(bottom: 8, left: 10),
+                    padding: const EdgeInsets.only(bottom: 8, left: 10),
                     child: Text(messageTitleOne),
                   ),
                   Container(
-                    padding: EdgeInsets.only(bottom: 8, right: 10),
+                    padding: const EdgeInsets.only(bottom: 8, right: 10),
 
                     child: Text(messageOne),
                   ),
@@ -73,11 +72,11 @@ class TopCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.only(bottom: 8, left: 10),
+                    padding: const EdgeInsets.only(bottom: 8, left: 10),
                     child: Text(messageTitleTwo),
                   ),
                   Container(
-                    padding: EdgeInsets.only(bottom: 8, right: 10),
+                    padding: const EdgeInsets.only(bottom: 8, right: 10),
                     child: Text(messageTwo),
                   ),
                 ],

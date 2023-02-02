@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iap/helpers/responsiveness.dart';
+import 'package:iap/framework/page/helper/responsiveness.dart';
 import 'package:iap/constants/app_colors.dart';
 
 import '../constants/constants.dart';

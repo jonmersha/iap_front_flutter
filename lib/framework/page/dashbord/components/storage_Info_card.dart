@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:iap/constants/app_colors.dart';
+import 'package:iap/constants/constants.dart';
 
-import '../../../constants/app_colors.dart';
-import '../../../constants/constants.dart';
 
 
 class StorageInfoCard extends StatelessWidget {
@@ -25,7 +25,7 @@ class StorageInfoCard extends StatelessWidget {
       decoration: BoxDecoration(
           border: Border.all(
               width: 2,
-              color: primaryColor.withOpacity(0.15)),
+              color: accentTextOrange.withOpacity(0.15)),
           borderRadius: const BorderRadius.all(
               Radius.circular(defaultPadding/10))),
       child: Row(
@@ -46,11 +46,11 @@ class StorageInfoCard extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                 ),
                 Text(
-                  "$fileAmount Files",
+                  "$fileAmount Reports",
                   style: Theme.of(context)
                       .textTheme
                       .caption!
-                      .copyWith(color: Colors.white70),
+                      .copyWith(color: Colors.deepOrange),
 
                 ),
               ],

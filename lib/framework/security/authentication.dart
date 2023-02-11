@@ -23,6 +23,7 @@ class _AuthenticationState extends State<Authentication> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: bgColor,
         body: Center(
           child: Container(
             constraints: BoxConstraints(maxWidth: 500),
@@ -58,8 +59,8 @@ class _AuthenticationState extends State<Authentication> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       CustomTextOLD(
-                          text: "Welcome to IA",
-                          color: Colors.deepPurple),
+                          text: "Cooperative Bank IAP",
+                          color: Colors.orange),
                     ],
                   ),
                   SizedBox(
@@ -68,7 +69,7 @@ class _AuthenticationState extends State<Authentication> {
                   TextField(
                       decoration: InputDecoration(
                           labelText: "Email",
-                          hintText: "xyz@besheger.com",
+                          hintText: "kamilzaporaj@besheger.com",
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(5)))),
                   SizedBox(

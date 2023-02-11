@@ -1,8 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:iap/framework/page/helper/local_navigator.dart';
-import 'package:iap/framework/page/helper/menu/right_side_menu.dart';
-import 'package:iap/framework/page/helper/menu/side-menu.dart';
+import 'package:iap/framework/page/helper/menu/menu_container.dart';
 class MediumScreen extends StatelessWidget {
   const MediumScreen ({Key? key}) : super(key: key);
 
@@ -19,7 +18,7 @@ class MediumScreen extends StatelessWidget {
                 children: const [
                   Expanded(
                       flex: 1,
-                      child: RightSideMenu())
+                      child: MenuContainer())
                 ],
               ),
             )),

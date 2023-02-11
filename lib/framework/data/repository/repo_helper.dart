@@ -18,7 +18,6 @@ Future<void> init() async {
   //Anual Plan
   Get.lazyPut(()=>AuthController(authRepository: Get.find()));
   Get.lazyPut(()=>AuthRepository(apIClient: Get.find()));
-
 }
 navigateTo(Widget widget){
   Get.back();

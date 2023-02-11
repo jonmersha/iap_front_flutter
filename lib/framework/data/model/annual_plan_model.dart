@@ -1,8 +1,8 @@
 class AnnualPlanModel {
  late List<AuditPlan> _auditPlan;
   List<AuditPlan> get auditPlan=>_auditPlan;
+  AnnualPlanModel({ required auditPlan});
 
- AnnualPlanModel({ required auditPlan});
 
   AnnualPlanModel.fromJson(Map<String, dynamic> json) {
     if (json['audit_plan'] != null) {
@@ -33,7 +33,8 @@ class AuditPlan {
   int? overalRiskScore;
 
   AuditPlan(
-      {this.planID,
+      {
+        this.planID,
         this.planStartDate,
         this.planEndDate,
         this.auditName,
@@ -43,7 +44,7 @@ class AuditPlan {
         this.overalRiskScore});
 
   AuditPlan.fromJson(Map<String, dynamic> json) {
-    planID = json['planID'];
+    planID = json['id'];
     planStartDate = json['planStartDate'];
     planEndDate = json['planEndDate'];
     auditName = json['auditName'];

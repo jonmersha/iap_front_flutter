@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:iap/constants/app_colors.dart';
+import 'package:iap/constants/constants.dart';
 import 'package:iap/framework/page/plan/components/card_object.dart';
 import 'package:iap/framework/page/plan/components/prograss_line.dart';
-import '../../../../constants/app_colors.dart';
-import '../../../../constants/constants.dart';
-
 
 class CardContent extends StatelessWidget {
   final CardInformation contentList;
   const CardContent({
     Key? key,
     required this.contentList,
-
   }) : super(key: key);
 
   @override

@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:iap/constants/app_colors.dart';
-import 'package:iap/framework/security/authentication.dart';
 import 'package:iap/framework/routing/routes.dart';
+import 'package:iap/framework/security/authentication.dart';
 import 'controllers.dart';
-import 'side_menu_item.dart';
+import 'oriantations/side_menu_item.dart';
 
-class RightSideMenu extends StatelessWidget {
-  const RightSideMenu({
+class MenuContainer extends StatelessWidget {
+  const MenuContainer({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: primaryColor,
+      backgroundColor: sidebar,
       child: SingleChildScrollView(
         child:Column(
           mainAxisSize: MainAxisSize.min,
@@ -24,10 +24,9 @@ class RightSideMenu extends StatelessWidget {
               onTap: () {
                 if (item.name == authenticationPageRoute) {
                   menuController.changeActiveItemTo(dashBordRouteDisplayName);
-                  Get.offAllNamed(authenticationPageRoute);
+                  Get.offAll(Authentication());
                 }
                 if (!menuController.isActive(item.name)) {
-
                   menuController.changeActiveItemTo(item.name);
                   Get.back();
                   navigationController.navigationTo(item.route);
@@ -58,7 +57,7 @@ class DrawerListTile extends StatelessWidget {
       horizontalTitleGap: 0.0,
       leading: SvgPicture.asset(
         svgSrc,
-        color:Colors.white54,
+        color:Colors.black87,
         height: 16,
 
       ),

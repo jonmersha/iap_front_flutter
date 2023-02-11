@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:iap/constants/app_colors.dart';
 import 'package:iap/constants/constants.dart';
 
 import '../../layout.dart';
@@ -20,8 +20,11 @@ class _CreateUserState extends State<CreateUser> {
     bool rememberMe = false;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+
       home: Scaffold(
+        backgroundColor: bgColor,
         body: Center(
+
           child: Container(
             constraints: BoxConstraints(maxWidth: 500),
             padding: EdgeInsets.all(10),
@@ -58,7 +61,7 @@ class _CreateUserState extends State<CreateUser> {
                   TextField(
                       decoration: InputDecoration(
                           labelText: "Full Name",
-                          hintText: "Yohannes Belay Endale",
+                          hintText: "Disribsa Belay Kumsa",
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(radius)))),
                   SizedBox(

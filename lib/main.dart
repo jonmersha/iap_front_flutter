@@ -38,7 +38,7 @@ class _AuditAppState extends State<AuditApp> {
           textTheme: GoogleFonts.mulishTextTheme(
           Theme.of(context).textTheme
         ).apply(
-          bodyColor: light
+          bodyColor: textColor
         ),
         pageTransitionsTheme: const PageTransitionsTheme(builders:{
           TargetPlatform.iOS:FadeUpwardsPageTransitionsBuilder(),
@@ -46,7 +46,7 @@ class _AuditAppState extends State<AuditApp> {
 
         }
         ),
-          primaryColor: Colors.blue
+          primaryColor: primaryColor
       ),
       home: Authentication(),
     );

@@ -21,15 +21,15 @@ class MenuController extends GetxController{
   Widget returnIconFor(String itemName){
     switch(itemName){
         case dashBordRouteDisplayName:
-              return _customIcon(Icons.trending_down, itemName);
+              return _customIcon(Icons.dashboard, itemName);
         case annualPlanRouteDisplayName:
-              return _customIcon(Icons.trending_down, itemName);
+              return _customIcon(Icons.next_plan_outlined, itemName);
         case auditProgramRouteDisplayName:
-        return _customIcon(Icons.trending_down, itemName);
+        return _customIcon(Icons.task, itemName);
         case engagementRouteDisplayName:
-        return _customIcon(Icons.trending_down, itemName );
+        return _customIcon(Icons.work, itemName );
       default:
-        return _customIcon(Icons.trending_flat, itemName);
+        return _customIcon(Icons.task_outlined, itemName);
     }
   }
   Widget _customIcon(IconData icon,String itemName){

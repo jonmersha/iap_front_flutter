@@ -22,6 +22,7 @@ dependencies:
   provider: ^5.0.0
   pie_chart: ^5.3.2
   flutter_uploader: ^3.0.0-beta.4
+  intl: ^0.17.0
 
 
 dev_dependencies:

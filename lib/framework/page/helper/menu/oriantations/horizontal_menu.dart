@@ -4,8 +4,6 @@ import 'package:iap/constants/app_colors.dart';
 import 'package:iap/framework/page/helper/menu/controllers.dart';
 import 'package:iap/widgets/custom_text.dart';
 
-
-
 class HorizontalMenuItems extends StatelessWidget {
   final String itemName;
   final Function() onTap;
@@ -37,30 +35,29 @@ class HorizontalMenuItems extends StatelessWidget {
                   maintainState: true,
                   maintainAnimation: true,
                   child: Container(
-                    width: 6,
+                    width: 18,
                     height: 40,
-                    color: dark,
+                    color: Colors.deepOrange,
                   ),
                 ),
                 SizedBox(
                   width: _width / 80,
                 ),
                 Padding(
-                  padding: EdgeInsets.all(16),
+                  padding: EdgeInsets.all(10),
                   child: menuController.returnIconFor(itemName),
                 ),
                 if (!menuController.isActive(itemName))
                   Flexible(
                       child: CustomTextOLD(
                     text: itemName,
-                    color:
-                        menuController.isHovering(itemName) ? primaryColor : listColor,
+                    color: menuController.isHovering(itemName) ? hoveringMenu : menuColor,
                   ))
                 else
                   Flexible(
                       child: CustomTextOLD(
                     text: itemName,
-                        color: Colors.deepOrange,
+                        color: Colors.cyan,
                         size: 18,
                         forntWeight: FontWeight.bold,
                   ))

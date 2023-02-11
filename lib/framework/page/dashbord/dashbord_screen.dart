@@ -3,9 +3,10 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:iap/constants/app_colors.dart';
+import 'package:iap/constants/constants.dart';
+import 'package:iap/resposnsive.dart';
 
-import '../../constants/constants.dart';
-import '../../resposnsive.dart';
+
 import 'components/chart.dart';
 import 'components/data_source.dart';
 import 'components/my_file.dart';
@@ -67,7 +68,7 @@ class RecentFile extends StatelessWidget {
       width: double.maxFinite,
       padding: const EdgeInsets.all(defaultPadding),
       decoration:  BoxDecoration(
-        color: primaryColor,
+        color: Colors.grey,
         borderRadius: BorderRadius.all(
           Radius.circular(10),
         ),

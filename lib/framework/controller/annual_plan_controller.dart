@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
+import 'package:iap/framework/data/model/anual_plan.dart';
+import 'package:iap/framework/data/model/plan_view_model.dart';
 import 'package:iap/framework/data/repository/annual_plan_repository.dart';
-import 'package:iap/framework/data/model/annual_plan_model.dart';
+ //import 'package:iap/framework/data/model/annual_plan_model.dart';
 
 
 class AnnualPlanController extends GetxController{
@@ -14,7 +16,7 @@ class AnnualPlanController extends GetxController{
     Response response=await annualPlanRepo.getAnnualPlanList();
     if(response.statusCode==200){
       _annualPlanList=[];
-      _annualPlanList.addAll(AnnualPlanModel.fromJson(response.body).auditPlan);
+      _annualPlanList.addAll(AuditPlanViewModel.fromJson(response.body).auditPlan);
       _isLoaded=true;
       update();
     }
@@ -29,7 +31,7 @@ class AnnualPlanController extends GetxController{
       update();
     }
     else{
-      print(response.statusCode);
+      print(" this is resposnse code ${response.statusCode}");
     }
   }
 }

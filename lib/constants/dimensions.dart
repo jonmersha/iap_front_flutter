@@ -2,7 +2,6 @@ import 'dart:math';
 
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-
 class Dimensions{
 //   static double screenHeight=Get.context!.height;
 //   static double screenWidth=Get.context!.width;
@@ -61,14 +60,6 @@ class Dimensions{
 //   static double icon26 = screenHeight/(screenHeight/26);
 //   static double iconSize24=screenHeight/(screenHeight/24);
 //   static double iconSize16=screenHeight/(screenHeight/16);
-
-
-
-
   //static double textHeight=screenHeight/(screenHeight/130);
-
-
-
-
 
 }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iap/framework/page/helper/menu/right_side_menu.dart';
-import 'package:iap/framework/page/helper/menu/right_side_menu.dart';
+
 import 'package:iap/framework/page/helper/menu/side-menu.dart';
 import 'package:iap/framework/page/helper/responsiveness.dart';
 import 'package:iap/screen/custom_screen.dart';
@@ -9,6 +8,7 @@ import 'package:iap/screen/small_screen.dart';
 import 'package:iap/widgets/top_nav_bar.dart';
 
 import 'constants/constants.dart';
+import 'framework/page/helper/menu/menu_container.dart';
 
 
 class SiteLayout extends StatelessWidget {
@@ -19,7 +19,7 @@ class SiteLayout extends StatelessWidget {
       key: scaffoldKey,
       appBar:  topNavigationBar(context, scaffoldKey),
       drawer:  const Drawer(
-        child: RightSideMenu(),
+        child: MenuContainer(),
       ),
       body: const ResponsiveWidget(
       largeScreen: LargeScreen(),

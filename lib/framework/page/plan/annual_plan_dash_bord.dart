@@ -31,41 +31,41 @@ class AnnualPLanDashBord extends StatelessWidget {
     ];
     List<CardInformation> cardInfo = [
       CardInformation(
-          cardName: "Quarter XYZ",
+          cardName: "Current Quarter",
           imagePath: "assets/icons/Figma_file.svg",
           messageTitleOne: "Active",
           messageONe: 123,
           messageTitleTwo: "Completed",
           messageTwo: 23,
           percentage: 50,
-          color: Colors.green),
+          color: cardTop),
       CardInformation(
-          cardName: "Month",
+          cardName: "Progress",
           imagePath: "assets/icons/Figma_file.svg",
           messageTitleOne: "Active",
           messageONe: 123,
           messageTitleTwo: "Progress",
           messageTwo: 23,
           percentage: 50,
-          color: Colors.blue),
+          color: cardTop),
       CardInformation(
-          cardName: "Team",
+          cardName: "Rectification Status",
           imagePath: "assets/icons/Figma_file.svg",
           messageTitleOne: "Team",
           messageONe: 123,
           messageTitleTwo: "Load",
           messageTwo: 23,
           percentage: 50,
-          color: Colors.green),
+          color: cardTop),
       CardInformation(
-          cardName: "Plan",
+          cardName: "Active Work",
           imagePath: "assets/icons/Figma_file.svg",
           messageTitleOne: "Completed",
           messageONe: 123,
           messageTitleTwo: "Remaining",
           messageTwo: 23,
-          percentage: 50,
-          color: Colors.green),
+          percentage: 30,
+          color: cardTop),
     ];
     Get.find<AnnualPlanController>().getAnnualPlanList();
 
@@ -149,9 +149,9 @@ class RightSideCard extends StatelessWidget {
                     horizontal: appPadding / 2, vertical: appPadding / 5),
                 margin: EdgeInsets.all(appPadding),
                 color: Colors.red,
-                child: Text("90%"),
+                child: Text("40%"),
               ),
-              Text("Not Started")
+              Text("Reported")
             ],
           ),
           Row(

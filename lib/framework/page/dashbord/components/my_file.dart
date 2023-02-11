@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../../constants/constants.dart';
-import '../../../resposnsive.dart';
+import 'package:iap/constants/constants.dart';
+import 'package:iap/resposnsive.dart';
+
 import 'file_information.dart';
 import 'list_object.dart';
 

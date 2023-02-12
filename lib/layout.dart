@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:iap/framework/page/helper/menu/side-menu.dart';
+import 'package:iap/trash/side-menu.dart';
 import 'package:iap/framework/page/helper/responsiveness.dart';
 import 'package:iap/screen/custom_screen.dart';
 import 'package:iap/screen/large_screen.dart';

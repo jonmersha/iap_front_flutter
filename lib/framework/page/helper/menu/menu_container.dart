@@ -20,10 +20,13 @@ class MenuContainer extends StatelessWidget {
         child:Column(
           mainAxisSize: MainAxisSize.min,
           children: sideMenuItem.map((item) => SideMenuItem(
-              itemName: item.name,
+              itemName: item.name==AuthenticationPageRoute
+                  ?MyMenuItem("Log Out","/auth")
+                  :item,
               onTap: () {
-                if (item.name == authenticationPageRoute) {
-                  menuController.changeActiveItemTo(dashBordRouteDisplayName);
+                if (item.route == AuthenticationPageRoute) {
+                  //menuController.changeActiveItemTo(dashBordRouteDisplayName);
+                  print(" Logout Menu ${item.route} =================");
                   Get.offAll(Authentication());
                 }
                 if (!menuController.isActive(item.name)) {

@@ -17,27 +17,26 @@ const annualPlan="/Audit Plan";
 const planList="/PlanList";
 const AuditEngamentPageRoute="/Engagement";
 const AuditProgramPageRoute="/Audit Program";
-const authenticationPageRoute="/outh";
+const AuthenticationPageRoute="/auth";
 const editPlan="/editPlan";
 //const pageNotFound=""
 
-class MenuItem{
+class MyMenuItem{
   final String name;
   final String route;
 
-  MenuItem(this.name, this.route);
+  MyMenuItem(this.name, this.route);
 
 }
 
 
-List<MenuItem> sideMenuItem=[
-  MenuItem(dashBordRouteDisplayName,dashBord),
-  MenuItem(annualPlanRouteDisplayName,annualPlan),
-  MenuItem(auditProgramRouteDisplayName,AuditProgramPageRoute,),
-  MenuItem(engagementRouteDisplayName,AuditEngamentPageRoute),
-  MenuItem(authenticationRouteDisplayName,authenticationPageRoute),
-  MenuItem("Plan List", "/PlanList"),
-  MenuItem("New PLan", "/addPlan"),
-
+List<MyMenuItem> sideMenuItem=[
+  MyMenuItem(dashBordRouteDisplayName,dashBord),
+  MyMenuItem(annualPlanRouteDisplayName,annualPlan),
+  MyMenuItem(auditProgramRouteDisplayName,AuditProgramPageRoute,),
+  MyMenuItem(engagementRouteDisplayName,AuditEngamentPageRoute),
+  MyMenuItem(authenticationRouteDisplayName,AuthenticationPageRoute),
+  MyMenuItem("Plan List", "/PlanList"),
+  MyMenuItem("New PLan", "/addPlan"),
 
 ];

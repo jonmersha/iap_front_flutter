@@ -20,7 +20,7 @@ Route<dynamic> generateRoute(RouteSettings settings){
       return _getPageRoute(ViewPlan());
       case "/PlanList":
       return _getPageRoute(ViewPlan());
-    case authenticationPageRoute:
+    case AuthenticationPageRoute:
       return _getPageRoute(Authentication());
     case "/addPlan":
       return _getPageRoute(NewPlanFormContainer());

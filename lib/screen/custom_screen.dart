@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:iap/framework/page/helper/local_navigator.dart';
 import 'package:iap/framework/page/helper/menu/menu_container.dart';
-import 'package:iap/framework/page/helper/menu/side-menu.dart';
+import 'package:iap/trash/side-menu.dart';
 class CustomScreen extends StatelessWidget {
   const CustomScreen ({Key? key}) : super(key: key);
 

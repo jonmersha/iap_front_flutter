@@ -28,7 +28,7 @@ class ApIClient extends GetConnect implements GetxService{
   Future<Response> postData(String uri,dynamic body) async {
     try{
      Response response= await post(uri,body);
-     print(response);
+     //print(response);
      return response;
     }catch(e){
       return Response(statusCode: 1,statusText: e.toString());
@@ -39,7 +39,7 @@ class ApIClient extends GetConnect implements GetxService{
   Future<Response> getUser(String uri,dynamic body) async {
     try{
       Response response= await post(uri,body);
-      print(response);
+     // print(response);
       return response;
     }catch(e){
       return Response(statusCode: 1,statusText: e.toString());

@@ -69,7 +69,6 @@ class AnnualPLanDashBord extends StatelessWidget {
     ];
     Get.find<AnnualPlanController>().getAnnualPlanList();
 
-
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

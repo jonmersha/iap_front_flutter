@@ -10,13 +10,18 @@ const progressBack=Color(0x6CFF8700);
 const accentTextOrange = Color(0xFFEE8216);
 const accentTextWhite = Color(0xFFFFFFFF);
 const textColor = Color(0xFF222225);
-const  bgColor = Color(0xF7A3CAD5);
+//const  bgColor = Color(0xF7A3CAD5);
+const  bgColor = Color(0xFFFFFFFF);
 
 
 
 //Componenets Color
-const sidebar = Color(0xF7A3CAD5);
-const Color topBar = Color(0xF7A3CAD5);
+//const sidebar = Color(0xF7A3CAD5);
+const sidebar = Color(0xFFFFFFFF);
+
+//const Color topBar = Color(0xF7A3CAD5);
+const Color topBar = Color(0xFFFFFFFF);
+
 const Color iconColor = Color(0xFF222225);
 
 const Color cardColor = Color(0xFFFFFFFF);

@@ -35,8 +35,125 @@ List<MyMenuItem> sideMenuItem=[
   MyMenuItem(annualPlanRouteDisplayName,annualPlan),
   MyMenuItem(auditProgramRouteDisplayName,AuditProgramPageRoute,),
   MyMenuItem(engagementRouteDisplayName,AuditEngamentPageRoute),
+  MyMenuItem("Plan List", "/PlanList"),
+  MyMenuItem("New PLan", "/addPlan"),
+  MyMenuItem("Audit object", "/aol"),
+  MyMenuItem("Add Audit Object", "/addAuditObject"),
+
   MyMenuItem(authenticationRouteDisplayName,AuthenticationPageRoute),
+];
+List<MyMenuItem> adminMenu=[
+  MyMenuItem(dashBordRouteDisplayName,dashBord),
+  MyMenuItem(annualPlanRouteDisplayName,annualPlan),
+  MyMenuItem(auditProgramRouteDisplayName,AuditProgramPageRoute,),
+  MyMenuItem(engagementRouteDisplayName,AuditEngamentPageRoute),
   MyMenuItem("Plan List", "/PlanList"),
   MyMenuItem("New PLan", "/addPlan"),
 
+  MyMenuItem(authenticationRouteDisplayName,AuthenticationPageRoute),
 ];
+
+
+List<MyMenuItem> auditorMenu=[
+  MyMenuItem(dashBordRouteDisplayName,dashBord),
+  MyMenuItem(annualPlanRouteDisplayName,annualPlan),
+  MyMenuItem(auditProgramRouteDisplayName,AuditProgramPageRoute,),
+  MyMenuItem(engagementRouteDisplayName,AuditEngamentPageRoute),
+  MyMenuItem("Plan List", "/PlanList"),
+  MyMenuItem("New PLan", "/addPlan"),
+
+  MyMenuItem(authenticationRouteDisplayName,AuthenticationPageRoute),
+];
+
+List<MyMenuItem> teamManager=[
+  MyMenuItem(dashBordRouteDisplayName,dashBord),
+  MyMenuItem(annualPlanRouteDisplayName,annualPlan),
+  MyMenuItem(auditProgramRouteDisplayName,AuditProgramPageRoute,),
+  MyMenuItem(engagementRouteDisplayName,AuditEngamentPageRoute),
+  MyMenuItem("Plan List", "/PlanList"),
+  MyMenuItem("New PLan", "/addPlan"),
+
+  MyMenuItem(authenticationRouteDisplayName,AuthenticationPageRoute),
+];
+
+List<MyMenuItem> auditDirectorMenu=[
+  MyMenuItem(dashBordRouteDisplayName,dashBord),
+  MyMenuItem(annualPlanRouteDisplayName,annualPlan),
+  MyMenuItem(auditProgramRouteDisplayName,AuditProgramPageRoute,),
+  MyMenuItem(engagementRouteDisplayName,AuditEngamentPageRoute),
+  MyMenuItem("Plan List", "/PlanList"),
+  MyMenuItem("New PLan", "/addPlan"),
+
+  MyMenuItem(authenticationRouteDisplayName,AuthenticationPageRoute),
+];
+
+
+List<MyMenuItem> auditeesMenu=[
+  MyMenuItem(dashBordRouteDisplayName,dashBord),
+  MyMenuItem(annualPlanRouteDisplayName,annualPlan),
+  MyMenuItem(auditProgramRouteDisplayName,AuditProgramPageRoute,),
+  MyMenuItem(engagementRouteDisplayName,AuditEngamentPageRoute),
+  MyMenuItem("Plan List", "/PlanList"),
+  MyMenuItem("New PLan", "/addPlan"),
+
+  MyMenuItem(authenticationRouteDisplayName,AuthenticationPageRoute),
+];
+
+List<MyMenuItem> chiefAuditorMenu=[
+  MyMenuItem(dashBordRouteDisplayName,dashBord),
+  MyMenuItem(annualPlanRouteDisplayName,annualPlan),
+  MyMenuItem(auditProgramRouteDisplayName,AuditProgramPageRoute,),
+  MyMenuItem(engagementRouteDisplayName,AuditEngamentPageRoute),
+  MyMenuItem("Plan List", "/PlanList"),
+  MyMenuItem("New PLan", "/addPlan"),
+
+  MyMenuItem(authenticationRouteDisplayName,AuthenticationPageRoute),
+];
+
+List<MyMenuItem> presidentOffice=[
+  MyMenuItem(dashBordRouteDisplayName,dashBord),
+  MyMenuItem(annualPlanRouteDisplayName,annualPlan),
+  MyMenuItem(auditProgramRouteDisplayName,AuditProgramPageRoute,),
+  MyMenuItem(engagementRouteDisplayName,AuditEngamentPageRoute),
+  MyMenuItem("Plan List", "/PlanList"),
+  MyMenuItem("New PLan", "/addPlan"),
+
+  MyMenuItem(authenticationRouteDisplayName,AuthenticationPageRoute),
+];
+
+List<MyMenuItem> vps=[
+  MyMenuItem(dashBordRouteDisplayName,dashBord),
+  MyMenuItem(annualPlanRouteDisplayName,annualPlan),
+  MyMenuItem(auditProgramRouteDisplayName,AuditProgramPageRoute,),
+  MyMenuItem(engagementRouteDisplayName,AuditEngamentPageRoute),
+  MyMenuItem("Plan List", "/PlanList"),
+  MyMenuItem("New PLan", "/addPlan"),
+
+  MyMenuItem(authenticationRouteDisplayName,AuthenticationPageRoute),
+];
+
+List<MyMenuItem> board=[
+  MyMenuItem(dashBordRouteDisplayName,dashBord),
+  MyMenuItem(annualPlanRouteDisplayName,annualPlan),
+  MyMenuItem(auditProgramRouteDisplayName,AuditProgramPageRoute,),
+  MyMenuItem(engagementRouteDisplayName,AuditEngamentPageRoute),
+  MyMenuItem("Plan List", "/PlanList"),
+  MyMenuItem("New PLan", "/addPlan"),
+
+  MyMenuItem(authenticationRouteDisplayName,AuthenticationPageRoute),
+];
+
+
+List<MyMenuItem> user=[
+  MyMenuItem(dashBordRouteDisplayName,dashBord),
+  MyMenuItem(annualPlanRouteDisplayName,annualPlan),
+  MyMenuItem(auditProgramRouteDisplayName,AuditProgramPageRoute,),
+  MyMenuItem(engagementRouteDisplayName,AuditEngamentPageRoute),
+  MyMenuItem("Plan List", "/PlanList"),
+  MyMenuItem("New PLan", "/addPlan"),
+
+
+  MyMenuItem(authenticationRouteDisplayName,AuthenticationPageRoute),
+];
+
+

@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iap/constants/app_colors.dart';
+import 'package:iap/framework/page/helper/menu/controllers.dart';
 import 'package:iap/framework/page/plan/view/component/audit_plan_card.dart';
 import 'package:iap/framework/page/plan/view/component/progress.dart';
+import 'package:iap/layout.dart';
+import 'package:iap/widgets/custom_text.dart';
 
 class QuarterCard extends StatelessWidget {
 
@@ -29,7 +33,15 @@ class QuarterCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text('Quarter ${quarterNumber}'),
-                Text('More Action ...'),
+                InkWell(
+                  onTap: (){
+                menuController.changeActiveItemTo("/qplan");
+                Get.back();
+                navigationController.navigationTo("/qplan");
+                  },
+                    child: Text('More Action ...')
+                ),
+
               ],
             ),
           ),

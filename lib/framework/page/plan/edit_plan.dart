@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iap/framework/data/model/anual_plan.dart';
-//import 'package:iap/framework/data/model/annual_plan_model.dart';
 import 'package:iap/framework/page/helper/menu/controllers.dart';
 
 import '../../data/model/plan_view_model.dart';

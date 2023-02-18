@@ -25,8 +25,7 @@ class MenuContainer extends StatelessWidget {
                   :item,
               onTap: () {
                 if (item.route == AuthenticationPageRoute) {
-                  //menuController.changeActiveItemTo(dashBordRouteDisplayName);
-                  print(" Logout Menu ${item.route} =================");
+                  menuController.changeActiveItemTo(dashBordRouteDisplayName);
                   Get.offAll(Authentication());
                 }
                 if (!menuController.isActive(item.name)) {

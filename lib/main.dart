@@ -16,8 +16,10 @@ Future<void> main() async{
 
   WidgetsFlutterBinding.ensureInitialized();
   await dep.init();
+
   Get.put(MenuController());
   Get.put(NavigationController());
+
   runApp(const AuditApp());
 }
 
@@ -32,6 +34,8 @@ class _AuditAppState extends State<AuditApp> {
   @override
   Widget build(BuildContext context) {
     Get.find<AnnualPlanController>().getAnnualPlanList();
+   // Get.find<AuditObjectController>().getAuditObject();
+
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "IAP",

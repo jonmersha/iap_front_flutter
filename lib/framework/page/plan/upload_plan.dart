@@ -30,7 +30,7 @@ class UploadPlan extends StatelessWidget {
                           borderRadius: BorderRadius.all(Radius.circular(appPadding))
 
                       ),
-                      child: AddNewPlan())
+                      child: NewAuditPlan())
 
               ],
             ),
@@ -46,7 +46,7 @@ class UploadPlan extends StatelessWidget {
                 borderRadius: BorderRadius.all(Radius.circular(appPadding))
                 
               ),
-              child: AddNewPlan())
+              child: NewAuditPlan())
           ,),
       ],
     );
